@@ -1,10 +1,19 @@
 //Set up canvas
 let canvas = new fabric.Canvas('canvas');
-canvas.setHeight(window.innerHeight);
-canvas.setWidth(window.innerWidth);
+
+//Drawing mode
 canvas.isDrawingMode = true;
+
+//Free draw brush width and color
 canvas.freeDrawingBrush.width = 5;
-canvas.freeDrawingBrush.color = "#ffffff";
+canvas.freeDrawingBrush.color = "#000000";
+
+//On canvas change
+canvas.on('after:render', canvasModifiedCallback);
+function canvasModifiedCallback () {
+
+}
+
 
 //Background color picker
 let backgroundColorPicker = document.getElementById('backgroundColorPicker');
@@ -24,7 +33,9 @@ function invertHex(hex) {
 //Handle background color change
 function onBackgroundColorPickerChange(event) {
     //Change background accordingly
+    canvas.backgroundColor = event.target.value;
     document.getElementsByTagName("BODY")[0].style.backgroundColor = event.target.value;
+
 
     //Get invert color and set the body text color
     let invertedColor = invertHex(event.target.value);
@@ -52,6 +63,4 @@ pencilSizeSlider.onchange = (event) => {
 
 
 
-
-//Canvas and context
 
