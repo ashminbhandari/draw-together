@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="fix node_modules mishap">
+    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +64,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
@@ -76,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591287201555</updated>
       <workItem from="1591287202829" duration="5381000" />
-      <workItem from="1591292778504" duration="6854000" />
+      <workItem from="1591292778504" duration="10384000" />
     </task>
     <task id="LOCAL-00001" summary="socket.io signalling service">
       <created>1591289219398</created>
@@ -134,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591304402356</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="css">
+      <created>1591304697983</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591304697983</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +169,8 @@
     <MESSAGE value="node_modules mishap" />
     <MESSAGE value="socket.io signalling and project reordering/new setup" />
     <MESSAGE value="fix node_modules mishap" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix node_modules mishap" />
+    <MESSAGE value="css" />
+    <option name="LAST_COMMIT_MESSAGE" value="css" />
   </component>
   <component name="WindowStateProjectService">
     <state x="420" y="198" key="Vcs.Push.Dialog.v2" timestamp="1591304407694">

@@ -1,16 +1,21 @@
 'use strict';
 
+//Socket.io and other general requirements
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
 var os = require('os');
-var nodeStatic = require('node-static');
-var http = require('http');
-var socketIO = require('socket.io');
 
-var fileServer = new(nodeStatic.Server)();
-var app = http.createServer(function(req, res) {
-    fileServer.serve(req, res);
-}).listen(8080);
+//Directories
+app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/node_modules'));
 
-var io = socketIO.listen(app);
+app.get('/', function(req, res,next) {
+    res.sendFile(__dirname + '/index.html');
+});
+
+server.listen(4200);
 io.sockets.on('connection', function(socket) {
 
     // convenience function to log server messages on the client

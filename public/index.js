@@ -62,6 +62,4 @@ let socket = io.connect();
 
 socket.emit('message', 'ashmin');
 
-socket.on('message', function(message) {
-    console.log(message);
-})
+
