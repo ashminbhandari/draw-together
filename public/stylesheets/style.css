@@ -1,8 +1,15 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
 }
 
-a {
-  color: #00B7FF;
+#colorPickers {
+  position: fixed;
+  right: 20px;
+  top: 20px;
 }
+
+
+
+

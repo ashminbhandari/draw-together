@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Draw Together</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div id="colorPickers">
+      <div id="penColorPickerContainer">
+        <input type="color" id="penColorPicker" value="#000000"/>
+        <p class="pickerLabelColor">Pen</p>
+      </div>
+      <div id="backgroundColorPickerContainer">
+        <input type="color" id="backgroundColorPicker" value="#FFFFFF">
+        <p class="pickerLabelColor">Background</p>
+      </div>
+    </div>
   </body>
+  <script src="/javascripts/index.js"></script>
 </html>
