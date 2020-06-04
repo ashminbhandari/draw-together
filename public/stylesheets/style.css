@@ -1,14 +1,23 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #000000;
+  overflow: hidden;
+  color: #ffffff
 }
 
-#colorPickers {
+#drawing-toolbar {
   position: fixed;
   right: 20px;
   top: 20px;
+  z-index: 1;
 }
+
+#drawing-toolbar > * {
+  margin-right: 20px;
+}
+
+
+
+
 
 
 

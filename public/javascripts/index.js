@@ -1,9 +1,18 @@
+//Set up canvas
+let canvas = new fabric.Canvas('canvas');
+canvas.setHeight(window.innerHeight);
+canvas.setWidth(window.innerWidth);
+canvas.isDrawingMode = true;
+canvas.freeDrawingBrush.width = 5;
+canvas.freeDrawingBrush.color = "#ffffff";
+
 //Background color picker
 let backgroundColorPicker = document.getElementById('backgroundColorPicker');
 let penColorPicker = document.getElementById('penColorPicker');
 
 //Subscribe to color changes
 backgroundColorPicker.addEventListener("input", onBackgroundColorPickerChange, false);
+penColorPicker.addEventListener("change", onPenColorPickerChange, false);
 
 //Hex inverter
 function invertHex(hex) {
@@ -19,7 +28,30 @@ function onBackgroundColorPickerChange(event) {
 
     //Get invert color and set the body text color
     let invertedColor = invertHex(event.target.value);
-    console.log(invertedColor);
     document.getElementsByTagName("BODY")[0].style.color = invertedColor;
+}
 
- }
+//Hadnle pen color picker change
+function onPenColorPickerChange(event) {
+    //Change pen color
+    canvas.freeDrawingBrush.color = event.target.value;
+}
+
+//Pencil size slider
+let pencilSizeSlider = document.getElementById('brush-size');
+
+
+//Slider onchange
+pencilSizeSlider.onchange = (event) => {
+    canvas.freeDrawingBrush.width = event.target.value;
+}
+
+
+
+
+
+
+
+
+//Canvas and context
+
