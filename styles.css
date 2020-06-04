@@ -1,0 +1,16 @@
+body {
+    background-color: #ffffff;
+    overflow: hidden;
+    color: #000000
+}
+
+#drawing-toolbar {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+}
+
+#drawing-toolbar > * {
+    margin-right: 20px;
+}
