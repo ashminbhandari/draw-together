@@ -57,3 +57,11 @@ let pencilSizeSlider = document.getElementById('brush-size');
 pencilSizeSlider.onchange = (event) => {
     canvas.freeDrawingBrush.width = event.target.value;
 }
+
+let socket = io.connect();
+
+socket.emit('message', 'ashmin');
+
+socket.on('message', function(message) {
+    console.log(message);
+})

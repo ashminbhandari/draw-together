@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="socket.io signalling and project reordering/new setup">
+    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="fix node_modules mishap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591287201555</updated>
       <workItem from="1591287202829" duration="5381000" />
-      <workItem from="1591292778504" duration="6496000" />
+      <workItem from="1591292778504" duration="6854000" />
     </task>
     <task id="LOCAL-00001" summary="socket.io signalling service">
       <created>1591289219398</created>
@@ -111,7 +113,28 @@
       <option name="project" value="LOCAL" />
       <updated>1591302614970</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="socket.io signalling and project reordering/new setup">
+      <created>1591304372271</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591304372271</updated>
+    </task>
+    <task id="LOCAL-00007" summary="socket.io signalling and project reordering/new setup">
+      <created>1591304392717</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591304392717</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix node_modules mishap">
+      <created>1591304402355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591304402356</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,14 +155,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="socket.io signalling service" />
     <MESSAGE value="socket.io signalling service and project reordering" />
+    <MESSAGE value="node_modules mishap" />
     <MESSAGE value="socket.io signalling and project reordering/new setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="socket.io signalling and project reordering/new setup" />
+    <MESSAGE value="fix node_modules mishap" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix node_modules mishap" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="420" y="199" key="Vcs.Push.Dialog.v2" timestamp="1591302620624">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="420" y="198" key="Vcs.Push.Dialog.v2" timestamp="1591304407694">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="2000" y="252" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.23.1920.1057@1440.23.1920.1057" timestamp="1591289272075" />
+    <state x="420" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.808@0.23.1440.808" timestamp="1591304407694" />
     <state x="420" y="199" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1591302620624" />
     <state x="1540" y="123" width="1720" height="778" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1591292752485">
       <screen x="1440" y="23" width="1920" height="1057" />
