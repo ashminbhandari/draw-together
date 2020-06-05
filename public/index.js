@@ -14,7 +14,7 @@ canvas.on('object:added', canvasModifiedCallback);
 //Set up a socket connection with our server
 const socket = new io.connect();
 
-//Set up listener
+//Set up listener and draw
 socket.on('canvasChange', function(objectAdded) {
     fabric.util.enlivenObjects([objectAdded], function(objects) {
         objects.forEach(function (o) {
