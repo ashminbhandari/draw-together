@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="css">
+    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="socket connection works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591287201555</updated>
       <workItem from="1591287202829" duration="5381000" />
-      <workItem from="1591292778504" duration="10384000" />
+      <workItem from="1591292778504" duration="22974000" />
     </task>
     <task id="LOCAL-00001" summary="socket.io signalling service">
       <created>1591289219398</created>
@@ -145,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591304697983</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="socket connection works">
+      <created>1591308808732</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591308808732</updated>
+    </task>
+    <task id="LOCAL-00011" summary="socket connection works">
+      <created>1591308834451</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591308834451</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,14 +180,16 @@
     <MESSAGE value="socket.io signalling and project reordering/new setup" />
     <MESSAGE value="fix node_modules mishap" />
     <MESSAGE value="css" />
-    <option name="LAST_COMMIT_MESSAGE" value="css" />
+    <MESSAGE value="socket connection/project structure coherence" />
+    <MESSAGE value="socket connection works" />
+    <option name="LAST_COMMIT_MESSAGE" value="socket connection works" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="420" y="198" key="Vcs.Push.Dialog.v2" timestamp="1591304407694">
+    <state x="420" y="198" key="Vcs.Push.Dialog.v2" timestamp="1591308838851">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="2000" y="252" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.23.1920.1057@1440.23.1920.1057" timestamp="1591289272075" />
-    <state x="420" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.808@0.23.1440.808" timestamp="1591304407694" />
+    <state x="420" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.808@0.23.1440.808" timestamp="1591308838851" />
     <state x="420" y="199" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1591302620624" />
     <state x="1540" y="123" width="1720" height="778" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1591292752485">
       <screen x="1440" y="23" width="1920" height="1057" />

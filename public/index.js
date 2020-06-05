@@ -1,7 +1,5 @@
-console.log('here');
-
 //Set up canvas
-let canvas = new fabric.Canvas('canvas');
+const canvas = new fabric.Canvas('canvas');
 
 //Drawing mode
 canvas.isDrawingMode = true;
@@ -11,14 +9,29 @@ canvas.freeDrawingBrush.width = 5;
 canvas.freeDrawingBrush.color = "#000000";
 
 //On canvas change
-canvas.on('after:render', canvasModifiedCallback);
-function canvasModifiedCallback () {
+canvas.on('object:added', canvasModifiedCallback);
 
+//Set up a socket connection with our server
+const socket = new io.connect();
+
+//Set up listener
+socket.on('canvasChange', function(objectAdded) {
+    fabric.util.enlivenObjects([objectAdded], function(objects) {
+        objects.forEach(function (o) {
+            canvas.add(o);
+        });
+    });
+});
+
+//Call up server when canvas changes with the change
+function canvasModifiedCallback(e) {
+    const objectAdded = e.target;
+    socket.emit('canvasChange', objectAdded);
 }
 
 //Background color picker
-let backgroundColorPicker = document.getElementById('backgroundColorPicker');
-let penColorPicker = document.getElementById('penColorPicker');
+const backgroundColorPicker = document.getElementById('backgroundColorPicker');
+const penColorPicker = document.getElementById('penColorPicker');
 
 //Subscribe to color changes
 backgroundColorPicker.addEventListener("input", onBackgroundColorPickerChange, false);
@@ -26,8 +39,8 @@ penColorPicker.addEventListener("change", onPenColorPickerChange, false);
 
 //Hex inverter
 function invertHex(hex) {
-    let sliced = hex.slice(1);
-    let inverted = (Number(`0x1${sliced}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase();
+    const sliced = hex.slice(1);
+    const inverted = (Number(`0x1${sliced}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase();
     return '#' + inverted;
 }
 
@@ -37,9 +50,8 @@ function onBackgroundColorPickerChange(event) {
     canvas.backgroundColor = event.target.value;
     document.getElementsByTagName("BODY")[0].style.backgroundColor = event.target.value;
 
-
     //Get invert color and set the body text color
-    let invertedColor = invertHex(event.target.value);
+    const invertedColor = invertHex(event.target.value);
     document.getElementsByTagName("BODY")[0].style.color = invertedColor;
 }
 
@@ -50,16 +62,19 @@ function onPenColorPickerChange(event) {
 }
 
 //Pencil size slider
-let pencilSizeSlider = document.getElementById('brush-size');
-
+const pencilSizeSlider = document.getElementById('brush-size');
 
 //Slider onchange
 pencilSizeSlider.onchange = (event) => {
     canvas.freeDrawingBrush.width = event.target.value;
 }
 
-let socket = io.connect();
 
-socket.emit('message', 'ashmin');
+
+
+
+
+
+
 
 
