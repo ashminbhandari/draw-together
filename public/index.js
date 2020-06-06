@@ -1,41 +1,8 @@
-//Set up canvas
-const canvas = new fabric.Canvas('canvas');
-
-//Drawing mode
-canvas.isDrawingMode = true;
-
-//Free draw brush width and color
-canvas.freeDrawingBrush.width = 5;
-canvas.freeDrawingBrush.color = "#000000";
-
-//On canvas change
-canvas.on('object:added', canvasModifiedCallback);
-
-//Set up a socket connection with our server
-const socket = new io.connect();
-
-//Set up listener and draw
-socket.on('canvasChange', function(objectAdded) {
-    fabric.util.enlivenObjects([objectAdded], function(objects) {
-        objects.forEach(function (o) {
-            canvas.add(o);
-        });
-    });
-});
-
-//Call up server when canvas changes with the change
-function canvasModifiedCallback(e) {
-    const objectAdded = e.target;
-    socket.emit('canvasChange', objectAdded);
-}
-
-//Background color picker
-const backgroundColorPicker = document.getElementById('backgroundColorPicker');
-const penColorPicker = document.getElementById('penColorPicker');
-
-//Subscribe to color changes
-backgroundColorPicker.addEventListener("input", onBackgroundColorPickerChange, false);
-penColorPicker.addEventListener("change", onPenColorPickerChange, false);
+const paths = [];
+let currentPath = [];
+let color = "#000000";
+let weight = 5;
+let socket = io.connect();
 
 //Hex inverter
 function invertHex(hex) {
@@ -44,10 +11,16 @@ function invertHex(hex) {
     return '#' + inverted;
 }
 
+//Color picker
+const penColorPicker = document.getElementById('penColorPicker');
+
+//Subscribe to color changes
+penColorPicker.addEventListener("change", onPenColorPickerChange, false);
+
 //Handle background color change
 function onBackgroundColorPickerChange(event) {
     //Change background accordingly
-    canvas.backgroundColor = event.target.value;
+    background = event.target.color;
     document.getElementsByTagName("BODY")[0].style.backgroundColor = event.target.value;
 
     //Get invert color and set the body text color
@@ -58,7 +31,7 @@ function onBackgroundColorPickerChange(event) {
 //Hadnle pen color picker change
 function onPenColorPickerChange(event) {
     //Change pen color
-    canvas.freeDrawingBrush.color = event.target.value;
+    color = event.target.value;
 }
 
 //Pencil size slider
@@ -66,15 +39,50 @@ const pencilSizeSlider = document.getElementById('brush-size');
 
 //Slider onchange
 pencilSizeSlider.onchange = (event) => {
-    canvas.freeDrawingBrush.width = event.target.value;
+    weight = event.target.value;
 }
 
+function setup() {
+    createCanvas(window.innerWidth, window.innerHeight);
+}
 
+function draw() {
+    noFill();
 
+    //Listen for socket emits from server
+    socket.on('canvasChange', function (data) {
+        console.log(data);
+        currentPath.push(data);
+    })
 
+    if (mouseIsPressed) {
+        const point = {
+            x: mouseX,
+            y: mouseY,
+            color: color,
+            weight: weight
+        };
+        currentPath.push(point);
 
+        //Send path
+        socket.emit('canvasChange', point);
+    }
 
+    paths.forEach(path => {
+        beginShape();
+        path.forEach(point => {
+            stroke(point.color);
+            strokeWeight(point.weight);
+            vertex(point.x, point.y);
+        });
+        endShape();
+    });
+}
 
+function mousePressed() {
+    currentPath = [];
+    paths.push(currentPath);
+}
 
 
 

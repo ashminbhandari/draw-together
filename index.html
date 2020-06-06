@@ -5,21 +5,17 @@
     <title>Draw Together</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://kit.fontawesome.com/bfecaa6797.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
 </head>
 
 <body>
 
 <div>
 
-    <canvas id="canvas" height="5000" width="5000"></canvas>
-
     <div id="drawing-toolbar">
 
         <i class="fa fa-2x fa-pencil"></i>
         <input type="color" id="penColorPicker" value="#000000">
-
-        <i class="fa fa-2x fa-fill-drip"></i>
-        <input type="color" id="backgroundColorPicker" value="#FFFFFF">
 
         <i class="fas fa-2x fa-certificate"></i>
         <input type="range" min="1" max="100" value="5" id="brush-size">
@@ -28,7 +24,6 @@
 
 </div>
 
-<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.4.0/fabric.min.js'></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="index.js"></script>
 
