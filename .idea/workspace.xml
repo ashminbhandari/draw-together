@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="use sockets simple and nice">
+    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="heroku deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <updated>1591287201555</updated>
       <workItem from="1591287202829" duration="5381000" />
       <workItem from="1591292778504" duration="23500000" />
-      <workItem from="1591474375448" duration="1208000" />
+      <workItem from="1591474375448" duration="1651000" />
     </task>
     <task id="LOCAL-00001" summary="socket.io signalling service">
       <created>1591289219398</created>
@@ -163,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591334959628</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="heroku deployment">
+      <created>1591479211026</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591479211026</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,13 +197,14 @@
     <MESSAGE value="socket connection/project structure coherence" />
     <MESSAGE value="socket connection works" />
     <MESSAGE value="use sockets simple and nice" />
-    <option name="LAST_COMMIT_MESSAGE" value="use sockets simple and nice" />
+    <MESSAGE value="heroku deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku deployment" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2000" y="252" key="Vcs.Push.Dialog.v2" timestamp="1591334989810">
+    <state x="2000" y="252" key="Vcs.Push.Dialog.v2" timestamp="1591479216367">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state x="2000" y="252" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.23.1920.1057@1440.23.1920.1057" timestamp="1591289272075" />
+    <state x="2000" y="252" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.23.1920.1057@1440.23.1920.1057" timestamp="1591479216367" />
     <state x="2000" y="252" key="Vcs.Push.Dialog.v2/0.23.1440.808/1440.23.1920.1057@1440.23.1920.1057" timestamp="1591334989810" />
     <state x="420" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.808@0.23.1440.808" timestamp="1591308838851" />
     <state x="420" y="199" key="Vcs.Push.Dialog.v2/0.23.1440.811@0.23.1440.811" timestamp="1591302620624" />

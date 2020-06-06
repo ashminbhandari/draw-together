@@ -14,7 +14,8 @@ app.get('/', function(req, res,next) {
     res.sendFile(__dirname + '/index.html');
 });
 
-server.listen(4200);
+server.listen(process.env.PORT || 3000);
+
 io.sockets.on('connection', function(socket) {
 
     //On canvas change
