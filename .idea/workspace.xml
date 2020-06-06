@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="attempting fabric fix on deployment">
+    <list default="true" id="5869713b-b9ae-421b-b616-6df83407368f" name="Default Changelist" comment="switch to p5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +76,7 @@
       <updated>1591287201555</updated>
       <workItem from="1591287202829" duration="5381000" />
       <workItem from="1591292778504" duration="23500000" />
-      <workItem from="1591474375448" duration="4405000" />
+      <workItem from="1591474375448" duration="4899000" />
     </task>
     <task id="LOCAL-00001" summary="socket.io signalling service">
       <created>1591289219398</created>
@@ -192,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591480105798</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="switch to p5">
+      <created>1591482575232</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591482575232</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +228,8 @@
     <MESSAGE value="heroku deployment" />
     <MESSAGE value="process.env.PORT instead" />
     <MESSAGE value="attempting fabric fix on deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting fabric fix on deployment" />
+    <MESSAGE value="switch to p5" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch to p5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2000" y="252" key="Vcs.Push.Dialog.v2" timestamp="1591480110376">

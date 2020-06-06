@@ -51,7 +51,6 @@ function draw() {
 
     //Listen for socket emits from server
     socket.on('canvasChange', function (data) {
-        console.log(data);
         currentPath.push(data);
     })
 
